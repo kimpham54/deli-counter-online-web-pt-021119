@@ -10,7 +10,7 @@ def line(array)
   else
     array.each_with_index do |linemate, index|
       position = index + 1
-      personmessage = "#{position}. linemate"
+      personmessage = "#{position}. #{linemate}"
       girl.push(personmessage.strip)
     end
       puts "The line is currently:" + girl.join(" ")
