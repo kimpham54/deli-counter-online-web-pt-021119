@@ -1,8 +1,6 @@
 # Write your code here.
 katz_deli = []
 other_deli = ["Logan", "Avi", "Spencer"]
-clone_another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
-
 another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
 
 def line(array)
@@ -15,7 +13,7 @@ def line(array)
       personmessage = "#{position}. linemate"
       girl.push(personmessage.strip)
     end
-      puts "The line is currently: #{girl
+      puts "The line is currently:" + girl.join(" ")
   end
 end
 
