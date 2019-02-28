@@ -63,6 +63,7 @@ def now_serving(array, arrayclone)
   if array.length == 0
     puts "There is nobody waiting to be seved!"
   else
+    until 
     arrayclone.each do |linemate|
       if array.include?(linemate) == true
         array.shift
