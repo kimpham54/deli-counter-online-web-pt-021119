@@ -13,7 +13,7 @@ def line(array)
       personmessage = "#{position}. #{linemate}"
       girl.push(personmessage.strip)
     end
-      puts "The line is currently:" + girl.join(" ")
+      puts "The line is currently: " + girl.join(" ")
   end
 end
 
