@@ -25,6 +25,7 @@ def take_a_number(array,name)
   puts "Welcome, #{name}. You are number #{position} in line."
 end
 
+# i thought the exercise wanted us to loop over the entire list
 def now_serving(array)
   if array.length == 0
     puts "There is nobody waiting to be served!"
