@@ -74,7 +74,7 @@ def now_serving(array, arrayclone)
     end
   end
 end
-
+end
 
 
 
