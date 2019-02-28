@@ -61,15 +61,16 @@ end
 
 def now_serving(array, arrayclone)
   if array.length == 0
-    puts "There is nobody waiting to be seved!"
+    puts "There is nobody waiting to be served!"
   else
-    until array.length == 0
     arrayclone.each do |linemate|
       if array.include?(linemate) == true
         array.shift
-        print("next in line: " + linemate + "\n")
-        puts array.inspect
-        puts arrayclone.inspect
+        # print("next in line: " + linemate + "\n")
+        # puts array.inspect
+        # puts arrayclone.inspect
+        if array.length == 0
+          puts "There is nobody waiting to be served!"
       end
     end
   end
@@ -80,7 +81,7 @@ end
 
 
 
-
+# until array.length == 0
 
 # line(katz_deli)
 # take_a_number(katz_deli, 'girl')
