@@ -25,63 +25,15 @@ def take_a_number(array,name)
   puts "Welcome, #{name}. You are number #{position} in line."
 end
 
-# def now_serving(array)
-#   arrayb = array
-#   if arrayb.length == 0
-#     puts "There is nobody waiting to be served!"
-#   else
-#     arrayb.each do |linemate|
-#       hey = arrayb.delete_at(0)
-#       # puts hey
-#       # puts linemate
-#       # puts "Currently serving #{hey}."
-#       # print(*arrayb)
-#       # print('arrayb now array')
-#       print(*array)
-      
-#     end
-#   end
-# end
-# another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
-
-
-
-# def now_serving(array)
-#   arrayb = array
-#   if arrayb.length == 0
-#     puts "There is nobody waiting to be served!"
-#   else
-#     until clone_another_deli.empty? == true
-#       if another_deli.include?(clone_another_deli[0]) == true
-
-      
-#     end
-#   end
-# end
-
-def now_serving(array, arrayclone)
-  if array.length == 0
+def now_serving(array)
+  if array.empty?
     puts "There is nobody waiting to be served!"
   else
-    arrayclone.each do |linemate|
-      if array.include?(linemate) == true
-        array.shift
-        # print("next in line: " + linemate + "\n")
-        # puts array.inspect
-        # puts arrayclone.inspect
-        if array.length == 0
-          puts "There is nobody waiting to be served!"
-      end
-    end
+    puts "Currently serving #{array[0]}."
+    array.shift
   end
 end
-end
 
-
-
-
-
-# until array.length == 0
 
 # line(katz_deli)
 # take_a_number(katz_deli, 'girl')
